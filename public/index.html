@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background-color: #333; color: white;">
+    <div>
+      <img src="logo.jpg" alt="Logo" style="height: 70px;"> 
+    </div>
+    <nav>
+      <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+        <li style="margin-left: 20px;"><a href="#home" style="color: #ffcc00; text-decoration: none;">Home</a></li>
+        <li style="margin-left: 20px;"><a href="#about" style="color: #ffcc00; text-decoration: none;">About</a></li>
+        <li style="margin-left: 20px;"><a href="#chatbot" style="color: #ffcc00; text-decoration: none;">Chatbot</a></li>
+        <li style="margin-left: 20px;"><a href="#contact-us" style="color: #ffcc00; text-decoration: none;">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to the Chatbot Application</h2>
+      <p>Interact with our chatbot to get quick responses and learn more about our services.</p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>This chatbot application is designed to demonstrate a simple interactive experience using web technologies.</p>
+    </section>
+
+    <section id="chatbot">
+      <h2>Chat with Our Bot</h2>
+      <div id="chat-container">
+        <div id="chat-output"></div>
+        <form id="chat-form">
+          <input type="text" id="user-input" placeholder="Type your message..." required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact-us">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Chatbot Application</p>
+  </footer>
+
+  <script src="script.js"></script> 
+</body>
+</html>
